@@ -6,6 +6,9 @@
     <title>Portefolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Gruppo&family=Manrope:wght@200..800&family=Noto+Serif+JP:wght@200..900&family=Thasadith:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -38,28 +41,28 @@
 </section>
     
 <section id="competences-box">
-    <h2>Mes compétences</h2>
+    <h2 class="tittles">Mes compétences</h2>
     <div class="competences">
         <div class="competence-card">
             <i class="fa-solid fa-code"></i>
-            <h2>HTML</h2>
+            <h3>HTML</h3>
             <p>description</p>
         </div>
         <div class="competence-card">
             <i class="fa-solid fa-code"></i>
-            <h2>CSS</h2>
+            <h3>CSS</h3>
             <p>description</p>
         </div>
         <div class="competence-card">
             <i class="fa-solid fa-code"></i>
-            <h2>JAVA</h2>
+            <h3>JAVA</h3>
             <p>description</p>
         </div>
     </div>
 </section>
 
 <section id="projets-box">
-    <h2>Mes dernières réalisations</h2>
+    <h2 class="tittles">Mes dernières réalisations</h2>
     <div class="card-container">
     <div class="card-projets">
         <img src="./images/coussinscrochet.png">
@@ -89,27 +92,97 @@
 </section>
 
 <section id="temoignages">
+    <h2 class="tittles">Témoignages</h2>
+<div id="temoignage-container">
     <div class="card-temoignage">
-        <p>Témoignages</p>
         <div class="temoin">
-        <img class="avatar" src="images/avatar.png">
-        <img>
-        <p>Prénom Nom</p>
-        <p>Job/Entreprise</p>
+            <div class="temoin-text">
+                <p>Petit témoignage d'un client</p>
+            </div>
+            <div class="info-temoin">
+                <img class="avatar" src="images/avatar.png">
+                <div class="id-temoin">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>Prénom Nom</p>
+                    <p>Job/Entreprise</p>
+                </div>
+            </div>
         </div>
     </div>
 
+    <div class="card-temoignage">
+        <div class="temoin">
+            <div class="temoin-text">
+                <p>Petit témoignage d'un client</p>
+            </div>
+            <div class="info-temoin">
+                <img class="avatar" src="images/avatar.png">
+                <div class="id-temoin">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>Prénom Nom</p>
+                    <p>Job/Entreprise</p>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <div class="card-temoignage">
+        <div class="temoin">
+            <div class="temoin-text">
+                <p>Petit témoignage d'un client</p>
+            </div>
+            <div class="info-temoin">
+                <img class="avatar" src="images/avatar.png">
+                <div class="id-temoin">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>Prénom Nom</p>
+                    <p>Job/Entreprise</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </section>
 
 <footer>
     <div class="text-bloc">
-        <h2>Travaillons ensemble</h2>
+        <h2 class="tittles">Travaillons ensemble</h2>
         <p>Petit texte pour motiver les visiteur à collaborer avec vous en vous contactant par mail</p>
-        <a id="instagram" href="http://www.URL RESEAU » target= »_blank »"><img src="http://URL TON SITE/wp-content/uploads/2013/11/IMAGE ICONE RESEAU.jpg » border=’0′"></a>
-        <a id="linkedin" href="http://www.URL RESEAU » target= »_blank »"><img src="http://URL TON SITE/wp-content/uploads/2013/11/IMAGE ICONE RESEAU.jpg » border=’0′"></a>
+
+        <div class="socials">
+        <a href="http://www.URL RESEAU" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="">
+
+        </a>
+        <a href="">
+
+        </a>
+            
+        </div>
     </div>
+    <div class="contact-box">
     <a class="button primary" href="mailto:bathily.oumou2103@gmail.com">Me contacter</a>
+    </div>
 </footer>
 </body>
 </html>

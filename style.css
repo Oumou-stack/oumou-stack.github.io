@@ -6,6 +6,10 @@ body{
     display: flex;
     flex-direction: column;
     background: linear-gradient(#582e06,#C99F77,#633204);
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
 }
 
 nav{
@@ -42,14 +46,12 @@ a{
     color: white;
 }
 
-a:hover{
-
-}
-
-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+li:hover{
+    width: fit-content;
+    border: solid 1px #582e06;
+    border-radius: 8px;
+    background: linear-gradient(#764929, #582900);
+    transition: all .3s ease-in-out;
 }
 
 #presentation-box{
@@ -58,6 +60,10 @@ section{
     flex-direction: row;
     margin: 38px;
     gap: 38px;
+}
+
+.text-bloc h1{
+    font-size: 50px;
 }
 
 .image-bloc img{
@@ -116,30 +122,142 @@ i{
     color: #62430e;
 }
 
+#projets-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#temoignages{
+    display: flex;
+}
+
+
 .card-container{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     row-gap: 35px;
-    column-gap: 139px;
-    justify-content: center;
+    column-gap: 17px;
 }
 
 .card-projets{
-    width: 18%;
-    border: solid transparent;
+    width: 24%;
+    border-radius: 10px;
    background: transparent;
    display: flex;
    flex-direction: column;
-   justify-content: center;
-   align-items: center;
    text-align: center;
 }
 
 .card-projets img{
     height: 40vh;
+    width: 100%;
+    object-fit: cover;
     border-radius: 10px;
 }
 
 .card-projets:hover{
     transform: scale(1.1);
+    box-shadow: white 0px 3px 15px 0px;
  }
+
+#temoignages{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#temoignage-container{
+    display: flex;
+    gap: 145px;
+    margin-top: 40px;
+}
+
+.card-temoignage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ .temoin{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: rgb(218, 189, 151);
+    padding: 28px;
+    padding-left: 17px;
+ }
+
+ .temoin p{
+    margin-top: 0;
+    margin-bottom: 20px;
+ }
+
+ .info-temoin{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info-temoin p{
+    margin: 0;
+}
+
+.id-temoin{
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar{
+    width: 30px;
+   height: 30px;
+   border: solid 1px rgb(66, 31, 12);
+   border-radius: 100%;
+   object-fit: cover;
+   margin-right: 20px;
+}
+
+.star{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.fa-star{
+    font-size: 10px;
+}
+
+.temoin:hover{
+    transform: scale(1.1);
+    box-shadow: rgb(218, 189, 151) 0px 2px 15px 0px;
+ }
+
+footer{
+    margin: 30px;
+    display: flex;
+    gap: 120px;
+}
+
+.fa-instagram{
+    font-size: 30px;
+    color: white;
+}
+.contact-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.socials{
+    display: flex;
+    gap: 3px;
+}
+
+h1, h2{
+    font-family: "Dancing Script", serif;
+}
+
+.tittles{
+    font-size: 30px;
+}
