@@ -5,94 +5,200 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portefolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Gruppo&family=Manrope:wght@200..800&family=Noto+Serif+JP:wght@200..900&family=Thasadith:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./images/odstusio.logo.png">
 </head>
 
 <body>
-<nav>
-    <div id="logo">
-        <img src="./images/Logo1.png">
-        <h2>Bathily Oumou</h2>
-    </div>
+    <header>
+        <div class="socials">
+        <a href="http://www.URL RESEAU" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="http://www.URL RESEAU" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a target="_blank" href="https://github.com/Oumou-stack/oumou-stack.github.io">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        </div>
 
-    <ul>
-        <li><a href="#">A propos</a></li>
-        <li><a href="#">Réalisations</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-</nav>
+        <div id="logo">
+            <img src="images/odstusio.logo.png">
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about-me">A propos</a></li>
+            <li><a href="#projets-box">Réalisations</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 
 <section id="presentation-box">
-    <div class="text-bloc">
-        <h3>Oumou</h3>
-        <h1>Profession</h1>
-        <p>
-            4-5 lignes de présentation, ce que l'on sait faire et ce que l'on cherche professionnellement
-            et ce qu'on fait actuellement.
-        </p>
-        <a class="button primary" href="mailto:bathily.oumou2103@gmail.com">Me contacter</a>
-    </div>
-    <div class="image-bloc">
-    <img src="./images/avatar.png">
+    <div class="banner">
+        <div class="banner-content">
+            <h1>Bienvenue sur OD Studio ☕</h1>
+            <p>Un espace cosy pour coder avec créativité</p>
+        </div>
     </div>
 </section>
-    
-<section id="competences-box">
-    <h2 class="tittles">Mes compétences</h2>
+
+<section id="aboutme-box">
+    <h2 class="tittles" data-aos="fade-down">Qui suis-je</h2>
+    <div class="aboutme-container">
+    <div class="aboutme-image-bloc">
+        <img src="./images/monavatar.png">
+        <a class="button primary" href="bathily.oumou2103@gmail.com" target="_blank">Contacter</a>
+        </div> 
+
+    <div class="aboutme-text-bloc">
+        <div class="aboutme-presentation">
+            
+            <p>
+                <h3>Un parcours atypique, moi ? Absolument !</h3>
+                <br> Je me présente: Oumou Bathily, j'ai commencé par décrocher un bac pro ASSP 
+                (Accompagnement, Soins et Services à la Personne), qui m'a permis d'acquérir de l'expérience auprès des 
+                personnes âgées et des enfants. 
+                <br>Et croyez-moi, ces deux publics ont en commun un talent pour vous apprendre la patience !
+            </p>
+        </div>
+        <div class="competences-container">
+        <div class="icones-container">
+            <img src="./images/stethoscope.png">
+            <img src="./images/muffin.png">
+            <img src="./images/ordinateur.png">
+        </div>
+
+        <ul class="aboutme-list">
+            <li><strong>Expériences:</strong> Travail en hôpital et en crèche (maîtrise des imprévus et beaucoup d'écoute et de patience). </li>
+            <li><strong>Reconversion:</strong> Une belle aventure dans la pâtisserie, avec un soupçon de créativité. </li>
+            <li><strong>Nouvelle aventure:</strong> En formation à l'EM-Lyon Business School dans le programme "La Toile". Objectif : devenir développeuse web. </li>
+        </ul>
+        </div>
+
+        <p>
+            Aujourd'hui, je tisse les bases de mon futur métier de développeuse. Mon objectif ? 
+            <strong>Intégrer une alternance</strong> pour continuer à coder mon avenir, une ligne à la fois.
+        </p>
+    </div>
+    </div>
+</section>
+
+
+<section class="competences-box">
+    <h2 class="tittles" data-aos="fade-down">Mes compétences Techniques</h2>
     <div class="competences">
+
         <div class="competence-card">
             <i class="fa-solid fa-code"></i>
-            <h3>HTML</h3>
-            <p>description</p>
+            <h3>Développement web</h3>
+            <ul class="hardskills">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+                <li>Responsive design</li>
+            </ul>
         </div>
+
         <div class="competence-card">
-            <i class="fa-solid fa-code"></i>
-            <h3>CSS</h3>
-            <p>description</p>
+            <i class="fa-solid fa-code-branch"></i>
+            <h3>Outils de développement</h3>
+            <ul class="hardskills">
+                <li>VS Code</li>
+                <li>Figma</li>
+                <li>GitHub</li>
+            </ul>
         </div>
+
         <div class="competence-card">
-            <i class="fa-solid fa-code"></i>
-            <h3>JAVA</h3>
-            <p>description</p>
+            <i class="fa-solid fa-pen-nib"></i>
+            <h3>Projets et certifications</h3>
+            <ul class="hardskills">
+                <li>Création de projets personnels</li>
+                <li>Certifications en ligne</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="competences-box humaines">
+    <h2 class="tittles" data-aos="fade-down">Mes compétences Humaines</h2>
+    <div class="competences">
+
+        <div class="competence-card">
+            <i class="fa-solid fa-puzzle-piece"></i>
+            <h3>Adaptabilité</h3>
+            <ul class="hardskills">
+                <li>Capacité à évoluer dans des environnements variés</li>
+                <li>Transition réussie entre plusieurs domaines professionnels.</li>
+                <li>Ecouter et répondre à des besoins variés</li>
+            </ul>
+        </div>
+
+        <div class="competence-card">
+            <i class="fa-solid fa-palette"></i>
+            <h3>Créativité et sens du détail</h3>
+            <ul class="hardskills">
+                <li>Création de projets homogènes et soignés.</li>
+                <li>Approche esthétique dans la conception de projets web.</li>
+                <li>Curiosité à explorer des styles variés</li>
+            </ul>
+        </div>
+
+        <div class="competence-card">
+            <i class="fa-brands fa-js"></i>
+            <h3>Résilience et motivation</h3>
+            <ul class="hardskills">
+                <li>Détermination pour se réorienter et se former à de nouvelles compétences.</li>
+                <li>Capacité à relever les défis d'un apprentissage constant.</li>
+            </ul>
         </div>
     </div>
 </section>
 
 <section id="projets-box">
-    <h2 class="tittles">Mes dernières réalisations</h2>
+    <h2 class="tittles" data-aos="fade-down">Mes dernières réalisations</h2>
     <div class="card-container">
     <div class="card-projets">
-        <img src="./images/coussinscrochet.png">
+        <a target="_blank" href="https://oumou-stack.github.io/Album/">
+        <img src="images/Capturealbum.PNG"></a>
+        <p>Album</p>
+    </div>
+    <div class="card-projets">
+        <a target="_blank" href="https://oumou-stack.github.io/shop/">
+        <img src="images/Captureshop.PNG"></a>
+        <p>Shop</p>
+    </div>
+    <div class="card-projets">
+        <a target="_blank" href="https://oumou-stack.github.io/Horloge/">
+    <img src="images/Capturehorloge.PNG"></a>
+        <p>Horloge</p>
+    </div>
+    
+    <div class="card-projets">
+        <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2l0ZSUyMHdlYnxlbnwwfHwwfHx8MA%3D%3D">
         <p>description SGGKSHDGFIUSJFKVB</p>
     </div>
     <div class="card-projets">
-        <img src="./images/coussinscrochet.png">
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHNpdGUlMjB3ZWJ8ZW58MHx8MHx8fDA%3Dg">
         <p>description SGGKSHDGFIUSJFKVB</p>
     </div>
     <div class="card-projets">
-        <img src="./images/coussinscrochet.png">
+        <img src="https://plus.unsplash.com/premium_photo-1681566925312-948c8a896b37?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHNpdGUlMjB3ZWJ8ZW58MHx8MHx8fDA%3D">
         <p>description SGGKSHDGFIUSJFKVB</p>
     </div>
-    <div class="card-projets">
-        <img src="./images/coussinscrochet.png">
-        <p>description SGGKSHDGFIUSJFKVB</p>
+    
     </div>
-    <div class="card-projets">
-        <img src="./images/coussinscrochet.png">
-        <p>description SGGKSHDGFIUSJFKVB</p>
-    </div>
-    <div class="card-projets">
-        <img src="./images/coussinscrochet.png">
-        <p>description SGGKSHDGFIUSJFKVB</p>
-    </div>
-</div>
 </section>
 
 <section id="temoignages">
-    <h2 class="tittles">Témoignages</h2>
+    <h2 class="tittles" data-aos="fade-down">Témoignages</h2>
 <div id="temoignage-container">
     <div class="card-temoignage">
         <div class="temoin">
@@ -161,28 +267,34 @@
     </div>
 </div>
 </section>
-
+<a href="mailto:chose@bidule.fr" class="">test</a>
 <footer>
     <div class="text-bloc">
         <h2 class="tittles">Travaillons ensemble</h2>
-        <p>Petit texte pour motiver les visiteur à collaborer avec vous en vous contactant par mail</p>
-
+        <p>Motivée, curieuse et prête à apprendre, je suis une développeuse en herbe qui ne craint ni les défis ni les lignes de code capricieuses. 
+            <br>Ensemble, on fera du beau travail, une ligne à la fois !</p>
         <div class="socials">
-        <a href="http://www.URL RESEAU" target="_blank">
-            <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="">
-
-        </a>
-        <a href="">
-
-        </a>
-            
+            <a href="http://www.URL RESEAU" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="http://www.URL RESEAU" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a target="_blank" href="https://github.com/Oumou-stack/oumou-stack.github.io">
+                <i class="fa-brands fa-github"></i>
+            </a>
         </div>
     </div>
     <div class="contact-box">
-    <a class="button primary" href="mailto:bathily.oumou2103@gmail.com">Me contacter</a>
+        <a class="button primary" href="bathily.oumou2103@gmail.com" target="_blank">Contacter</a>
     </div>
+    
 </footer>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </body>
 </html>
