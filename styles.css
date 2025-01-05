@@ -138,6 +138,7 @@ a:hover{
 
 .primary:hover{
   background: #F6BFDF;
+  color: #FEF8FC;
   transform: scale(1.05);
 }
 
@@ -178,7 +179,7 @@ h2{
 .aboutme-text ul{
   display: flex;
   flex-direction: column;
-    row-gap: 25px;
+  row-gap: 25px;
   list-style-type: none;
 }
 
@@ -214,6 +215,7 @@ h2{
     2% 35%, 
     39% 35%
   ); /* Forme étoilée */
+  
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
               0 0 20px rgba(255, 255, 255, 0.5); /* Halo lumineux */
   opacity: 0;
@@ -287,6 +289,7 @@ h2,h3{
   font-size: 14px;
   transform: rotateY(180deg);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: -44px;
 }
 
 .card-back li{
@@ -490,7 +493,6 @@ footer {
   transform: scale(1.1);
 }
 
-/* Affichez la flèche lorsque l'utilisateur descend */
 #scrollTop.show {
   opacity: 1;
   visibility: visible;
